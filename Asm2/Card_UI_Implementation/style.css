@@ -1,0 +1,91 @@
+h2 {
+    font-family: "Roboto", sans-serif;
+    text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.523);
+}
+
+p {
+    font-family: "Audiowide", sans-serif;
+    font-size: 13px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    max-width: 300px;
+    min-height: 150px;
+    color: white;
+    background-color: powderblue;
+    box-sizing: border-box;
+    margin: 20px;
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative;
+    transition: all 0.3s ease; /* Add smooth transition */
+    transform: translateY(0); /* Initial position */
+}
+
+.card:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transform: translateY(-10px); /* Move up by 10px on hover */
+}
+
+/* Set image positioned absolutely fill the card */
+.card_image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.card_image img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Set a gradient overlay sit on top of the image */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.8));
+    z-index: 2;
+}
+
+/* Set the content sit on top of the overlay */
+.card_content {
+    position: relative;
+    padding: 20px;
+    z-index: 3;
+}
+
+.btn {
+    position: relative;
+    background-color: transparent;
+    /* This doesn't work */
+    text-transform: uppercase;
+    color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 10px 30px;
+    margin: 20px 20px;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.btn:hover {
+    background-color: wheat;
+    color: black;
+    border: 2px solid black;
+}
