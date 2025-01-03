@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Registration Form</title>
+  </head>
+  <body>
+    <form action="jr.php" onsubmit="submit()">
+      <!-- Form Title -->
+      <h1>Sign Up</h1>
+      <!-- Name Panel -->
+      <div>
+        <label for="firstname">First Name:</label>
+        <input class="text_input" type="text" id="firstname" name="user_firstname" placeholder="Enter Your First Name" required/>
+        <label for="lastname">Last Name:</label>
+        <input class="text_input" type="text" id="lastname" name="user_lastname" placeholder="Enter Your Last Name" required/>
+      </div>
+      <!-- Email Panel -->
+      <div>
+        <label for="email">Email Address:</label>
+        <input class="text_input" type="email" id="email" name="user_email" placeholder="Enter Your Email Address" required />
+        <label for="psw">Password:</label>
+        <input class="text_input" type="text" id="psw" name="user_psw" placeholder="Enter Your Password" minlength="6" required />
+        <label for="con-psw">Confirm Password:</label>
+        <input  class="text_input" type="text" id="con-psw" name="confirm_psw" placeholder="Enter Your Password Again" minlength="6" required autocomplete="off" />
+      </div>
+      <!-- Personal DOB -->
+       <div>
+        <label for="dob">Date of Birth:</label>
+        <input class="text_input" type="date" id="dob" name="user_dob" required />
+        <label>Gender:</label><br>
+        <input type="radio" id="female" name="gender">
+        <label for="female">Female</label><br>
+        <input type="radio" id="male" name="gender">
+        <label for="male">Male</label>
+      </div>
+       <!-- About Me -->
+       <div>
+        <br><label for="about_me">About Me:</label><br>
+        <input class="text_input" type="textarea" id="about_me" name="user_about" placeholder="Write something about yourself" ></textarea>
+       </div>
+       <!-- Profession Choice -->
+        <div>
+          <label for="profession">Choose Your Profession:</label>
+          <select name="profession" id="profession">
+            <option value="Web Development">Web Development</option>
+            <option value="Data Analytics">Data Analytics</option>
+            <option value="UI/UX Design">UI/UX Design</option>
+          </select>
+        </div>
+        <!-- Submit Panel -->
+        <div class="submit">
+          <button class="btn" type="submit">Submit</button>
+        </div>
+
+        <script>
+          function submit() {
+            alert("Form Submitted Successfully!");
+          }
+        </script>
+    </form>
+  </body>
+</html>
