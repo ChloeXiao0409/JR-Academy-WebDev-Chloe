@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Shopping List">
+    <title>Shopping List</title>
+</head>
+<script>
+    //1. Create a shopping list Array
+    let shoppingList = ['Milk', 'Bread', 'Eggs', 'Pet Food'];
+
+    //2. Add two new items to the shopping list
+    shoppingList.push('Cupcakes', 'Violate Ice Cream');
+    console.log(shoppingList); //Output: ['Milk', 'Bread', 'Eggs', 'Pet Food', 'Cupcakes', 'Violate Ice Cream']
+
+    //3. Remove the last item from the shopping list
+    shoppingList.pop();
+    console.log(shoppingList); //Output: ['Milk', 'Bread', 'Eggs', 'Pet Food', 'Cupcakes']
+
+    //4. Create a function: When there are more than 5 items in the shopping list, alert the user that 'Your Shopping Cart is full'
+    function checkShoppingList() {
+        if (shoppingList.length > 5) {
+            alert('Your Shopping Cart is full');
+        }
+    }
+
+    //5. Iterate over the shopping list and log each item to the console with number index
+    function logShoppingList() {
+        for (let i = 0; i < shoppingList.length; i++) {
+            console.log(i + 1 + '. ' + shoppingList[i]); //Output: 1. Milk, 2. Bread, 3. Eggs, 4. Pet Food, 5. Cupcakes
+        }
+    }
+
+    //6. Create a function: It can take item name as an argumanet and return if it is in the shopping list
+    function checkListItem(item) {
+        if (shoppingList.includes(item)) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+    console.log(checkListItem('Milk')); //Output: true
+    console.log(checkListItem('Apple')); //Output: false
+
+    //7. Create an Item Object, it contains name, price, and quantity
+    let item = {
+        name: 'Milk',
+        price: 12,
+        quantity: 1
+    };
+
+</script>
+<body>
+    
+</body>
+</html>
