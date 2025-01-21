@@ -10,3 +10,5 @@ This repo is for all assignments of JR Academy Web Development Course
 ### 1. **Responsive Order List Design**: [Lab 1](https://github.com/ChloeXiao0409/JR-Academy-WebDev-Chloe/tree/main/Lab1/Responsive-Order-list)
 
 ### 3. **Responsive Price Cards Design**: [Lab 3](https://github.com/ChloeXiao0409/JR-Academy-WebDev-Chloe/tree/main/Lab3)
+
+### 5. **Weather Application**: [Lab 5](https://github.com/ChloeXiao0409/JR-Academy-WebDev-Chloe/tree/main/Lab5/Weather%20App)
