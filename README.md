@@ -12,3 +12,4 @@ This repo is for all assignments of JR Academy Web Development Course
 ### 3. **Responsive Price Cards Design**: [Lab 3](https://github.com/ChloeXiao0409/JR-Academy-WebDev-Chloe/tree/main/Lab3)
 
 ### 5. **Weather Application**: [Lab 5](https://github.com/ChloeXiao0409/JR-Academy-WebDev-Chloe/tree/main/Lab5/Weather%20App)
+### 6. **Progress Bar Design**: [Lab 6](https://github.com/ChloeXiao0409/JR-Academy-WebDev-Chloe/tree/main/Lab6/Progress-Bar)
